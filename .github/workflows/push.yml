@@ -1,0 +1,9 @@
+on: push
+name: deploy
+jobs:
+  deploy:
+   name: deploy de prueba
+   runs-on: ubuntu-latest
+   steps:
+   - run: echo "Estamos ejecetuando nuestro workflow"
+   - uses: actions/ckeckout@v3
